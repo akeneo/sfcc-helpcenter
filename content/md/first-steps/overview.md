@@ -11,7 +11,7 @@ related: trigger, what-data, where-configuration, products-filter-configuration
 Akeneo Connector for SFCC is an add-on for Salesforce Commerce Cloud.
 This add-on named "**cartridge**" is installed on SFCC side and communicates with Akeneo PIM **via its API**.
 
-The connector is an **unidirectional** system: it exports PIM data to SFCC. **No SFCC data is sent back to the PIM**.
+The connector is a **unidirectional** system: it exports PIM data to SFCC. **No SFCC data is sent back to the PIM**.
 
 ![Overview](../img/overview.png)
 
@@ -19,7 +19,7 @@ The PIM is considered as the master tool for product data, it should not be hand
 
 # Process overview
 
-The connector is composed by **9 jobs**:
+The connector is composed of **9 jobs**:
 - `1- Akeneo-Import-Attributes`									
 - `2- Akeneo-Import-Media-Assets-Pricebook`
 - `3-1-1 Akeneo-Differential-Import-Master`
@@ -31,17 +31,17 @@ The connector is composed by **9 jobs**:
 - `5- Akeneo-Entity-Record-Grouping`
 
 
-Each job can be triggered manually or automatically on its own.
+Each job can be triggered manually or automatically, independently from the others.
 
 ::: info
-Each job is responsible for importing PIM architecture and data into Salesforce Commerce Cloud. The order above should be observed to build your catalog properly (1 then 2 then 3).
+Each job is responsible for importing the PIM architecture and data into Salesforce Commerce Cloud. The order above should be respected to build your catalog properly (1 then 2 then 3).
 :::
 
 ## 1- Akeneo-Import-Attributes job
 
 `1- Akeneo-Import-Attributes` job imports:
 - **PIM attributes**
-- **PIM attribute options** (from simple and multi select attribute type)
+- **PIM attribute options** (from simple and multi-select attribute type)
 
 ::: info
 Depending on your [connector configuration](05-mapping-configuration.html), some attributes can be mapped with default SFCC product attributes.
@@ -59,7 +59,7 @@ Depending on your [connector configuration](05-mapping-configuration.html), some
 "Full import" and "Differential import" jobs are quite similar and **should not be used at the same time**: they both import products from Akeneo PIM.
 
 - `3-2.x Akeneo-Full-Import-xxx` jobs import **all products** from Akeneo PIM.
-- `3-1.x Akeneo-Differential-Import-xxx` jobs import **only new products** since the last "**successful**" import made.
+- `3-1.x Akeneo-Differential-Import-xxx` jobs import **only new products** since the last "**successful**" import.
 
 These jobs import:
 - PIM categories
@@ -79,7 +79,7 @@ Depending on your [connector configuration](03-products-filter-configuration.htm
 
 ## 5- Akeneo-Entity-Record-Grouping
 
-`5- Akeneo-Entity-Import` job add some Reference Entity Records to an SFCC attribute group.
+`5- Akeneo-Entity-Import` job adds some Reference Entity Records to an SFCC attribute group.
 
 ::: info
 Depending on your [connector configuration](08-reference-entities.html), you can manage how your reference entities will be mapped into SFCC.

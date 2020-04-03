@@ -26,7 +26,7 @@ Once the connector is installed in your SFCC instance,
 
 
 
-The Job import process is completed when its status changes to `Ok`. If it fails, you could download the log file to understand why the import job did not succeed.
+The job import process is completed when its status changes to `Ok`. If it fails, you can download the log file to understand why the import job did not succeed.
 
 ## How to automatically trigger each job?
 
@@ -39,9 +39,9 @@ Then click on the `Schedule and History` tab and define the job scheduling setti
 
 
 ::: warning
-- In the event of an automatic trigger, please let a buffer between all jobs so the system can complete all import jobs before switching to another.
-- In the event of a manual trigger, please make sure no automatic process is set in the meantime.
-- Use the differential product import job as much as possible, to enhance the performances of the connector.
+- In the event of an automatic trigger, please let a buffer between all the jobs so that the system can complete all import jobs before switching to another.
+- In the event of a manual trigger, please make sure no automatic process has been set in the meantime.
+- Use the differential product import job as much as possible to enhance the performances of the connector.
 :::
 
 # How to check that all jobs have been executed correctly?
@@ -51,7 +51,7 @@ Then click on the `Schedule and History` tab and define the job scheduling setti
 
 ![Connector jobs history](../img/sfcc-jobs-history.png)
 
-Here, you will find the list of jobs that have been executed until now. You could check the status of each job while browsing this list.
+Here, you will find the list of jobs that have been executed until that point. You can check the status of each job in this list.
 
 ![Connector jobs history page](../img/sfcc-jobs-history-page.png)
 

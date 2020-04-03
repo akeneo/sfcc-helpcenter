@@ -1,5 +1,5 @@
 # Akeneo Connector for SFCC help center
-This repository holds the sources of the Akeneo Connector for SFCC help center, made by hand with love.
+This repository holds the sources of the Akeneo Connector for SFCC help center, handcrafted with love.
 
 ### Requirement
 
@@ -11,7 +11,7 @@ Install [Docker Engine](https://docs.docker.com/engine/installation/)
 make build
 ```
 
-This is only building the documentation. The documentation is not available with this command, as it does not launch the HTTP server.
+This command is only here to build the documentation. The documentation is not available with this command, as it does not launch the HTTP server.
 
 ### Build and launch HTTP server with docker
 
@@ -20,7 +20,7 @@ make watch
 ```
 
 The help center website is then available on `http://localhost:8000/sfcc/v20/`.
-Files located in the content and src directories are watched for changes, so when developing or writing new articles you do not need to launch any other task.
+Files located in the content and src directories are screened for changes, so when developing or writing new articles you do not need to launch any other tasks.
 
 ## Deployment of master version
 
@@ -28,7 +28,7 @@ Files located in the content and src directories are watched for changes, so whe
 
 Once you merge a PR into the `master` branch, it is automatically deployed on the staging server. In order to deploy it in production, please follow these steps:
 
-- Check the staging environment if everything is ok to be deployed in production
+- Check the staging environment if everything is ok to be deployed in production then
 - Open [the list of merged PR in master branch](https://circleci.com/gh/akeneo/workflows/sfcc-helpcenter/tree/master) in Circle CI. You have to be connected with your Github account.
 - Click on the first row which should be "On hold"
 

@@ -39,7 +39,7 @@ Akeneo Connector for SFCC maps PIM product models this way:
 - PIM product models `common` part is mapped with SFCC `Variation master`
 - PIM product models variation `level 1`+ variation `level 2` parts are mapped with SFCC `Variation products`
 
-Alternative: since the SFCC Connector **v19.6.0** version, you can model PIM Product model with 2 levels of variation like this:
+Alternative: since the **v19.6.0** version of the SFCC Connector, you can model PIM Product model with 2 levels of variation like this:
 - PIM product models `common` part is mapped with SFCC `Variation master`
 - PIM product models variation `level 1` part is mapped with SFCC `Variation group`
 - PIM product models variation `level 2` part is mapped with SFCC `Variation products`
@@ -52,7 +52,7 @@ Please consult our [cartridge configuration page](05-mapping-configuration.html)
 
 1. On the **Products** page, search for your product
 2. Click on the selected product
-3. Click on the `Lock` link in the top alert *"You haven't locked this product for editing. Click `Lock` if you need to edit the product."* to be able to edit product attributes.
+3. Click on the `Lock` link in the top alert *"You haven't locked this product for editing. Click on `Lock` to be able to edit product attributes."* 
 
 :::info
 With this last action, you are able to manipulate some attributes more easily. For example, you can click on the image attribute `Edit` button in order to see all the product images.
